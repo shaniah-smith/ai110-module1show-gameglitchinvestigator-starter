@@ -41,3 +41,24 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 6. If the user instead runs out of attempts without guessing correctly, the game displays "Out of attempts! The secret was [number]." along with the final score.
 
 ## 🧪 Test Results
+
+```
+=================================== test session starts ===================================
+platform darwin -- Python 3.14.7, pytest-9.1.1, pluggy-1.6.0 -- /Library/Frameworks/Python.framework/Versions/3.14/bin/python3
+cachedir: .pytest_cache
+rootdir: /Users/shaniahsmith/ai110-module1show-gameglitchinvestigator-starter
+plugins: anyio-4.15.1
+collected 9 items
+
+tests/test_game_logic.py::test_winning_guess PASSED                                 [ 11%]
+tests/test_game_logic.py::test_guess_too_high PASSED                                [ 22%]
+tests/test_game_logic.py::test_guess_too_low PASSED                                 [ 33%]
+tests/test_game_logic.py::test_hint_message_when_guess_too_high PASSED              [ 44%]
+tests/test_game_logic.py::test_hint_message_when_guess_too_low PASSED               [ 55%]
+tests/test_game_logic.py::test_score_deducts_on_too_high_regardless_of_attempt_parity PASSED [ 66%]
+tests/test_game_logic.py::test_score_deducts_on_too_low PASSED                      [ 77%]
+tests/test_game_logic.py::test_score_awards_points_on_win PASSED                    [ 88%]
+tests/test_game_logic.py::test_multiple_wrong_guesses_keep_lowering_score PASSED    [100%]
+
+==================================== 9 passed in 0.02s ====================================
+```
